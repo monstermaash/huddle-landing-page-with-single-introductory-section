@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  position: relative;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.background {
+  background-color: hsl(257, 40%, 49%);
+  position: relative;
+  z-index: -1;
+  margin-bottom: 3rem;
+}
+
+.desktop-bg {
+  position: relative;
+  z-index: -1;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.mobile-bg {
+  display: none;
+}
+
+.logo-box {
+  width: 25%;
+  padding: 5%;
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  width: 25%;
+  padding: 5%;
+}
+
+.mockup-box {
+  position: absolute;
+  top: 190px;
+  left: 75px;
+  width: fit-content;
+}
+
+.mockup {
+  width: 100%;
+  height: auto;
+}
+
+.info-box {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 190px;
+  right: 10px;
+}
+
+.text-box {
+  max-width: 500px;
+  min-width: 300px;
+  position: relative;
+  right: -130px;
+  word-wrap: normal;
+}
+
+.heading {
+  font-weight: 600;
+  color: #fff;
+  font-size: 36px;
+  max-width: 400px;
+  margin-top: 9%;
+  margin-bottom: 6%;
+  line-height: 1.5;
+}
+
+.button {
+  padding: 2% 10%;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  border-radius: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 3%;
+}
+
+.icons {
+  padding: 3% 7%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+i {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.4em 0.5em;
+  color: #fff;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-color: hsl(257, 40%, 49%);
+  }
+  .desktop-bg{
+    display: none;
+  }
+  .mobile-bg{
+    display: block;
+  }
+  .logo-box {
+    width: 62%;
+    padding: 7% 10%;
+    top: 0;
+  }
+  .logo {
+    width: 25%;
+  }
+  .middle-section {
+    background-color: hsl(257, 40%, 49%);
+  }
+  .mockup-box {
+    justify-content: center;
+    position: absolute;
+    top: 125px;
+    left: 30px;
+    margin-top: 3rem;
+  }
+  .mockup {
+    width: 85%;
+    height: auto;
+  }
+  .info-box {
+    position: absolute;
+    max-width: 500px;
+    top: 360px;
+    left: -100px;
+    background-color: hsl(257, 40%, 49%);
+    margin: 0;
+  }
+  .text-box {
+    max-width: max-content;
+    position: relative;
+    right: -100px;
+    text-align: center;
+    padding: 2%;
+    margin-top: 6%;
+  }
+  .heading {
+    font-size: 26px;
+    max-width: 330px;
+    margin: 0;
+    padding: 4%;
+  }
+  .sub-heading {
+    padding: 2%;
+  }
+  .button {
+    padding: 3% 23%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 14px;
+  }
+  .icons {
+    padding: 3% 7%;
+    position: absolute;
+    bottom: -430px;
+    right: 100px;
+  }
+}
